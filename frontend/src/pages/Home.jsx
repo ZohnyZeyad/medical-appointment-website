@@ -221,9 +221,9 @@ const Home = () => {
 
             {/* feature img */}
             <div className="relative z-10 xl:w-[770px] flex justify-end mt-[50px] lg:mt-0">
-              <img src={featureImg} alt="" />
+              <img src={featureImg} alt="" className="w-3/4" />
 
-              <div className="w-[150px] lg:w[248px] bg-white absolute bottom-[50px] left-0 md:bottom-[100px] md:left-5 z-20 p-2 pb-3 lg:pt-4 lg:px-4 lg:pb-[26px] rounded-[10px]">
+              <div className="w-[150px] lg:w-[248px] bg-white absolute bottom-[50px] left-0 md:bottom-[100px] md:left-5 z-20 p-2 pb-3 lg:pt-4 lg:px-4 lg:pb-[26px] rounded-[10px]">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-[6px] lg:gap-3">
                     <p className="text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 text-headingColor font-[600]">
@@ -259,15 +259,14 @@ const Home = () => {
       <section>
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
-              <h2 className="heading text-center">Our great doctors</h2>
-              <p className="text__para text-center">
-                World-class care for everyone. Our health system offers unmatched,
-                expert health care.
-              </p>
+            <h2 className="heading text-center">Our great doctors</h2>
+            <p className="text__para text-center">
+              World-class care for everyone. Our health system offers unmatched,
+              expert health care.
+            </p>
           </div>
 
-          <DoctorList/>
-
+          <DoctorList />
         </div>
       </section>
       {/* our great doctors end */}
@@ -286,7 +285,6 @@ const Home = () => {
               </h2>
               <FaqList />
             </div>
-
           </div>
         </div>
       </section>
@@ -295,7 +293,7 @@ const Home = () => {
       {/* testimonial */}
       <section>
         <div className="container">
-        <div className="xl:w-[470px] mx-auto">
+          <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center">What our patients say</h2>
             <p className="text__para text-center">
               World-class care for everyone. Our health system offers unmatched,
@@ -307,7 +305,6 @@ const Home = () => {
         </div>
       </section>
       {/* testimonial end */}
-
     </>
   );
 };
