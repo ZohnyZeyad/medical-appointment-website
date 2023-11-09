@@ -103,7 +103,7 @@ export const getMyAppointments = async (req, res) => {
 
     // step 2: extract doctor ids from bookings
 
-    const doctorIds = booking.map((el) => el.doctor.id);
+    const doctorIds = bookings.map((el) => el.doctor.id);
 
     // step 3: retrieve doctors using ids
 
